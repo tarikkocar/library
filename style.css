@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cards > div {
+    height: 500px;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    position: relative;
+    height: 100vh;
+    background-color: #20252d;
+  }
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    padding: 1rem;
+    min-height: 300px;
+    background-color: #eef0f2;
+    position: absolute;
+    top: 20%;
+    border: 3px solid #00bfaa;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+form {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+form div:not(.input-check) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    background-color: #00bfaa;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.add-book {
+    position: absolute;
+    top: 50px;
+}
+
+.btn-close {
+    width: fit-content;
+    align-self: flex-end;
+    padding: 0.3rem 0.6rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+  }
+  
