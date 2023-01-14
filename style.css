@@ -65,6 +65,15 @@ tr {
     border-bottom: 1px solid var(--border-color);
 }
 
+tr:not(:first-child):hover {
+    background-color: #ebe6d6;
+    transition: 0.3s;
+}
+
+tr:not(:first-child):not(:hover) {
+    transition: 0.3s;
+}
+
 td button {
     font-size: 0.8em;
     padding: 0.5em 1em;
