@@ -18,8 +18,6 @@ body {
 }
 
 .container {
-    margin: 0;
-    padding: 1vh;
     display: flex;
     flex-direction: column;
     height: 100%;
