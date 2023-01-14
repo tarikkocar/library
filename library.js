@@ -88,6 +88,7 @@ function updateBook(e) {
             myLibrary[i].formValues = newFormValues;
             book.innerHTML = `<td>${myLibrary[i].title}</td><td>${myLibrary[i].author}</td><td>${myLibrary[i].pages}</td><td>${myLibrary[i].read ? "Read" : "Not read"}</td><td>${myLibrary[i].date}</td><td class="settings"><div><button class="edit" id="${myLibrary[i].id}">Edit</button><button class="delete">X</button></div></td>`;
             document.getElementById(`${myLibrary[i].id}`).getElementsByClassName("edit")[0].addEventListener("click", editForm);
+            document.getElementById(`${myLibrary[i].id}`).getElementsByClassName("delete")[0].addEventListener("click", deleteBook)
             book.setAttribute("class", `${myLibrary[i].read = read ? "read" : "not-read"}`)
         }
     }
