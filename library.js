@@ -186,6 +186,11 @@ overlay.addEventListener("click", closeForm);
 form.addEventListener("submit", addBookToLibrary);
 saveButton.addEventListener("click", updateBook);
 checkbox.addEventListener("change", showDate);
+form.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+    }
+});
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
         closeForm();
